@@ -1,0 +1,452 @@
+[
+ {
+   "EVENT": "FTJACTIVE",
+   "COWORKER": "morgan",
+   "BASELINETIME": 2
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "grace",
+   "BASELINETIME": 5
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "lauren",
+   "BASELINETIME": 8
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "morgan",
+   "BASELINETIME": 9
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "morgan",
+   "BASELINETIME": 11
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "denise",
+   "BASELINETIME": 12
+ },
+ {
+   "EVENT": "FTJLEAVE",
+   "COWORKER": "morgan",
+   "BASELINETIME": 15
+ },
+ {
+   "EVENT": "FTJINACTIVE",
+   "COWORKER": "morgan",
+   "BASELINETIME": 17
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "sam",
+   "BASELINETIME": 20
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "ian",
+   "BASELINETIME": 20
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "jack",
+   "BASELINETIME": 21
+ },
+ {
+   "EVENT": "FTJACTIVE",
+   "COWORKER": "nicci",
+   "BASELINETIME": 23
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "nicci",
+   "BASELINETIME": 24
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "nicci",
+   "BASELINETIME": 24
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "sam",
+   "BASELINETIME": 24
+ },
+ {
+   "EVENT": "FTJLEAVE",
+   "COWORKER": "nicci",
+   "BASELINETIME": 26
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "nicci",
+   "BASELINETIME": 27
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "nicci",
+   "BASELINETIME": 28
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "quincy",
+   "BASELINETIME": 29
+ },
+ {
+   "EVENT": "FTJLEAVE",
+   "COWORKER": "nicci",
+   "BASELINETIME": 31
+ },
+ {
+   "EVENT": "FTJINACTIVE",
+   "COWORKER": "nicci",
+   "BASELINETIME": 33
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "abigail",
+   "BASELINETIME": 37
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "uma",
+   "BASELINETIME": 38
+ },
+ {
+   "EVENT": "FTJACTIVE",
+   "COWORKER": "jack",
+   "BASELINETIME": 40
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "jack",
+   "BASELINETIME": 43
+ },
+ {
+   "EVENT": "FTJACTIVE",
+   "COWORKER": "orville",
+   "BASELINETIME": 45
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "warren",
+   "BASELINETIME": 45
+ },
+ {
+   "EVENT": "FTJACTIVE",
+   "COWORKER": "grace",
+   "BASELINETIME": 46
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "orville",
+   "BASELINETIME": 46
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "grace",
+   "BASELINETIME": 48
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "jack",
+   "BASELINETIME": 49
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "orville",
+   "BASELINETIME": 49
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "ian",
+   "BASELINETIME": 49
+ },
+ {
+   "EVENT": "FTJLEAVE",
+   "COWORKER": "jack",
+   "BASELINETIME": 52
+ },
+ {
+   "EVENT": "FTJINACTIVE",
+   "COWORKER": "jack",
+   "BASELINETIME": 53
+ },
+ {
+   "EVENT": "FTJACTIVE",
+   "COWORKER": "peyton",
+   "BASELINETIME": 54
+ },
+ {
+   "EVENT": "FTJINACTIVE",
+   "COWORKER": "orville",
+   "BASELINETIME": 54
+ },
+ {
+   "EVENT": "FTJINACTIVE",
+   "COWORKER": "grace",
+   "BASELINETIME": 56
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "tiffany",
+   "BASELINETIME": 58
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "uma",
+   "BASELINETIME": 58
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "lauren",
+   "BASELINETIME": 58
+ },
+ {
+   "EVENT": "FTJINACTIVE",
+   "COWORKER": "peyton",
+   "BASELINETIME": 59
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "abigail",
+   "BASELINETIME": 59
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "carter",
+   "BASELINETIME": 60
+ },
+ {
+   "EVENT": "FTJACTIVE",
+   "COWORKER": "ian",
+   "BASELINETIME": 63
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "xenia",
+   "BASELINETIME": 64
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "ian",
+   "BASELINETIME": 64
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "ian",
+   "BASELINETIME": 65
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "ian",
+   "BASELINETIME": 66
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "fred",
+   "BASELINETIME": 67
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "ian",
+   "BASELINETIME": 68
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "ian",
+   "BASELINETIME": 68
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "ian",
+   "BASELINETIME": 69
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "orville",
+   "BASELINETIME": 70
+ },
+ {
+   "EVENT": "FTJLEAVE",
+   "COWORKER": "ian",
+   "BASELINETIME": 70
+ },
+ {
+   "EVENT": "FTJLEAVE",
+   "COWORKER": "ian",
+   "BASELINETIME": 71
+ },
+ {
+   "EVENT": "FTJLEAVE",
+   "COWORKER": "ian",
+   "BASELINETIME": 72
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "morgan",
+   "BASELINETIME": 73
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "yvette",
+   "BASELINETIME": 74
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "rick",
+   "BASELINETIME": 74
+ },
+ {
+   "EVENT": "FTJLEAVE",
+   "COWORKER": "ian",
+   "BASELINETIME": 75
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "ian",
+   "BASELINETIME": 76
+ },
+ {
+   "EVENT": "FTJLEAVE",
+   "COWORKER": "ian",
+   "BASELINETIME": 77
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "ian",
+   "BASELINETIME": 79
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "jack",
+   "BASELINETIME": 80
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "yvette",
+   "BASELINETIME": 85
+ },
+ {
+   "EVENT": "FTJINACTIVE",
+   "COWORKER": "ian",
+   "BASELINETIME": 89
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "grace",
+   "BASELINETIME": 94
+ },
+ {
+   "EVENT": "FTJACTIVE",
+   "COWORKER": "eric",
+   "BASELINETIME": 96
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "eric",
+   "BASELINETIME": 98
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "eric",
+   "BASELINETIME": 100
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "peyton",
+   "BASELINETIME": 103
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "quincy",
+   "BASELINETIME": 105
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "eric",
+   "BASELINETIME": 110
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "zack",
+   "BASELINETIME": 113
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "kevin",
+   "BASELINETIME": 114
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "eric",
+   "BASELINETIME": 114
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "tiffany",
+   "BASELINETIME": 115
+ },
+ {
+   "EVENT": "FTJACTIVE",
+   "COWORKER": "zack",
+   "BASELINETIME": 115
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "zack",
+   "BASELINETIME": 116
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "grace",
+   "BASELINETIME": 116
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "yvette",
+   "BASELINETIME": 117
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "zack",
+   "BASELINETIME": 117
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "quincy",
+   "BASELINETIME": 118
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "carter",
+   "BASELINETIME": 118
+ },
+ {
+   "EVENT": "FTJJOIN",
+   "COWORKER": "zack",
+   "BASELINETIME": 118
+ },
+ {
+   "EVENT": "FTJINACTIVE",
+   "COWORKER": "zack",
+   "BASELINETIME": 119
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "lauren",
+   "BASELINETIME": 119
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "nicci",
+   "BASELINETIME": 120
+ },
+ {
+   "EVENT": "CALLGET",
+   "COWORKER": "holly",
+   "BASELINETIME": 120
+ }
+]
