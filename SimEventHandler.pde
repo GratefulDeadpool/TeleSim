@@ -45,39 +45,33 @@ public void execute(SimEvent event) {
     ftjCount = 0; 
     if (ftjMap.size() > 0) {
       ftjCount = Math.min(10, Collections.max(ftjMap.values()));
-      freeCount.setText("Biggest room:\r\n" + Collections.max(ftjMap.keySet()) + ", " + ftjCount);
-    } else {
-      freeCount.setText("Biggest room:");
     }
     ftjGlide.setValue(ftjCount * 0.1);
+    FreeCoworker free = (FreeCoworker) coworker;
+    free.updateLabel(free.getName() + ", " + ftjMap.get(free.getName()));
   } else if (eventType == EventType.FTJJOIN) {
     ftjMap.replace(coworker.getName(), ftjMap.get(coworker.getName()) + 1);
     ftjCount = 0;
     if (ftjMap.size() > 0) {
       ftjCount = Math.min(10, Collections.max(ftjMap.values()));
-      freeCount.setText("Biggest room:\r\n" + Collections.max(ftjMap.keySet()) + ", " + ftjCount);
-    } else {
-      freeCount.setText("Biggest room:");
     }
     ftjGlide.setValue(ftjCount * 0.1);
+    FreeCoworker free = (FreeCoworker) coworker;
+    free.updateLabel(free.getName() + ", " + ftjMap.get(free.getName()));
   } else if (eventType == EventType.FTJLEAVE) {
     ftjMap.replace(coworker.getName(), Math.max(0, ftjMap.get(coworker.getName()) - 1));
     ftjCount = 0; 
     if (ftjMap.size() > 0) {
       ftjCount = Collections.max(ftjMap.values());
-      freeCount.setText("Biggest room:\r\n" + Collections.max(ftjMap.keySet()) + ", " + ftjCount);
-    } else {
-      freeCount.setText("Biggest room:");
     }
     ftjGlide.setValue(ftjCount * 0.1);
+    FreeCoworker free = (FreeCoworker) coworker;
+    free.updateLabel(free.getName() + ", " + ftjMap.get(free.getName()));
   } else if (eventType == EventType.FTJINACTIVE) {
     ftjMap.remove(coworker.getName());
     ftjCount = 0; 
     if (ftjMap.size() > 0) {
       ftjCount = Collections.max(ftjMap.values());
-      freeCount.setText("Biggest room:\r\n" + Collections.max(ftjMap.keySet()) + ", " + ftjCount);
-    } else {
-      freeCount.setText("Biggest room:");
     }
     ftjGlide.setValue(ftjCount * 0.1);
   } else if (eventType == EventType.FTJIN) {

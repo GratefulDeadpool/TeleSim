@@ -6,6 +6,8 @@ private static ArrayList<FreeCoworker> filledFree = new ArrayList<FreeCoworker>(
 
 public class FreeCoworker extends Coworker {
   
+  Textlabel l;
+  
   public FreeCoworker(String name, ControlP5 p5) {
     super(name, p5);
   }
@@ -13,6 +15,9 @@ public class FreeCoworker extends Coworker {
   @Override
   public void addToScreen() {
     b = addHelper(this, filledFree.size()); 
+    l = p5.addTextlabel(name + "FreeLabel")
+      .setPosition(width/50 + 5, 226 + filledFree.size() * (height/7))
+      .setValue(name);
     filledFree.add(this);
   }
   
@@ -25,10 +30,14 @@ public class FreeCoworker extends Coworker {
       p5.remove(firstName + "Free");
       p5.remove(firstName + "FreeLabel");
       for ( ; i < filledFree.size(); i++) {
-        String nameI = filledFree.get(i).name;
-        p5.remove(nameI + "Free");
-        p5.remove(nameI + "FreeLabel");
-        filledFree.get(i-1).b = addHelper(filledFree.get(i), i-1);
+        FreeCoworker coworker = filledFree.get(i);
+        String toChange = coworker.l.getStringValue();
+        p5.remove(coworker.name + "Free");
+        p5.remove(coworker.name + "FreeLabel");
+        filledFree.get(i-1).b = addHelper(coworker, i-1);
+        filledFree.get(i-1).l = p5.addTextlabel(coworker.name + "FreeLabel")
+          .setPosition(width/50 + 5, 226 + (i-1) * (height/7))
+          .setValue(toChange);
       }
       filledFree.remove(index);
     } else {
@@ -41,14 +50,16 @@ public class FreeCoworker extends Coworker {
     return "Free";
   }
   
+  public void updateLabel(String text) {
+    FreeCoworker toUpdate = filledFree.get(filledFree.indexOf(this));
+    toUpdate.l.setText(text);
+  }
+  
   private Button addHelper(Coworker coworker, int position) {
     Button button = p5.addButton(coworker.name + "Free")
       .setPosition(width/50, 175 + position * (height/7))
       .setSize(51, 51)
       .setImage(coworker.icon);
-    p5.addTextlabel(coworker.name + "FreeLabel")
-      .setPosition(width/50 + 5, 226 + position * (height/7))
-      .setValue(coworker.name);
      button.onClick(new CallbackListener() {
       public void controlEvent(CallbackEvent theEvent) {
         SimEvent toExecute = new SimEvent(EventType.FTJIN, name, p5);

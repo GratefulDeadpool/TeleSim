@@ -191,10 +191,6 @@ void setup() {
   .setPosition((int)((sizeX - sizeX/1.2)/6),(int)((sizeY - sizeY/1.2)/1.2))
   .setValue("Free \r\nJoin:");
   
-  freeCount = p5.addTextlabel("FreeCount")
-  .setPosition(0, sizeY - (int)((sizeY - sizeY/1.2)) - 20)
-  .setValue("Biggest room: ");
-  
   p5.addSpacer("Queue")
   .setPosition((int) (sizeX - sizeX/1.2),0)
   .setSize(5, (int)((sizeY - sizeY/1.2)/2))
