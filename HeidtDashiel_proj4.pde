@@ -234,9 +234,9 @@ void draw() {
   if (i < teledata.size()) {
     data = teledata.getJSONObject(i); 
   } else {
+    p5.remove("video");
     printScoreCard();
-    delay(500);
-    exit();
+    noLoop();
   }
   
   if (data != null && (EventType.valueOf(data.getString("EVENT").toUpperCase()) != EventType.CALLGET && (time.equals("Morning") || time.equals("Evening")))) {
