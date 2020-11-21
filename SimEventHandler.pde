@@ -2,6 +2,8 @@ public boolean eventBusy;
 private int queueCount = 0;
 private int ftjCount = 0;
 private int[] scoreCard = new int[]{0, 0, 0};
+
+private ArrayList<Coworker> coworkers = new ArrayList<Coworker>();
 private HashMap<String, Integer> ftjMap = new HashMap<String, Integer>();
 
 public void execute(SimEvent event) {
@@ -11,9 +13,15 @@ public void execute(SimEvent event) {
   
   // Add or remove coworkers based on event type.
   if (eventType == EventType.FTJACTIVE || eventType == EventType.CALLGET || eventType == EventType.QUEUEADD) {
-    coworker.addToScreen();
+    if (!coworkers.contains(coworker)) {
+      coworker.addToScreen();
+      coworkers.add(coworker);
+    }
   } else if (eventType == EventType.FTJINACTIVE || eventType == EventType.CALLIN || eventType == EventType.QUEUEREMOVE || eventType == EventType.CALLREMOVE) {
-    coworker.removeFromScreen();
+    if (coworkers.contains(coworker)) {
+      coworker.removeFromScreen();
+      coworkers.remove(coworker);
+    }
   }
   
   // If user in non-free-to-join call, user is busy
@@ -75,7 +83,7 @@ public void execute(SimEvent event) {
     }
     ftjGlide.setValue(ftjCount * 0.1);
   } else if (eventType == EventType.FTJIN) {
-    if (ftjMap.get(coworker.name) > 2) {
+    if (ftjMap.containsKey(coworker.getName()) && ftjMap.get(coworker.getName()) > 2) {
       scoreCard[2]++;
     }
   }
@@ -119,7 +127,12 @@ public void sonify(SimEvent event) {
 }
 
 public void printScoreCard() {
-  println("Number of missed important people: " + scoreCard[0]);
-  println("Number of contact queue overflow instances: " + scoreCard[1]);
-  println("Number of large group joins: " + scoreCard[2]);
+  
+  p5.addTextlabel("Scorecard")
+  .setPosition(width/2 - 271/2 + 40, height/2 - 120/2 + 40)
+  .setFont(createFont("arial", 12))
+  .setLabel("Coding Interface")
+  .setColor(color(0))
+  .setColorBackground(color(192))
+  .setText("Number of missed important people: " + scoreCard[0] + "\r\nNumber of contact queue overflow instances: " + scoreCard[1] + "\r\nNumber of large group joins: " + scoreCard[2]);
 }
